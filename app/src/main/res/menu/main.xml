@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_temperature"
+        android:orderInCategory="100"
+        android:title="@string/action_temperature"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_humidite"
+        android:orderInCategory="100"
+        android:title="@string/action_humidite"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_luminosite"
+        android:orderInCategory="100"
+        android:title="@string/action_luminosite"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_pollution"
+        android:orderInCategory="100"
+        android:title="@string/action_pollution"
+        app:showAsAction="never" />
+
+</menu>
