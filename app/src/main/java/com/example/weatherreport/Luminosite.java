@@ -30,7 +30,7 @@ public class Luminosite extends Activity {
         webSettings.setJavaScriptEnabled(true);
         webView.setInitialScale(240);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://thingspeak.com/channels/1686204/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15");
+        webView.loadUrl("https://thingspeak.com/channels/1686204/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Mesure+Luminosit%C3%A9&type=line");
 
         //Bouton pour aller vers la page d'accueil
 
@@ -59,7 +59,7 @@ public class Luminosite extends Activity {
         buttonRefresh.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Log.i("refresh", "refresh");
-                Luminosite.this.webView.loadUrl("https://thingspeak.com/channels/1686204/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15");
+                Luminosite.this.webView.loadUrl("https://thingspeak.com/channels/1686204/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Mesure+Luminosit%C3%A9&type=line");
             }
         });
     }

@@ -31,7 +31,7 @@ public class Temperature extends Activity {
         webSettings.setJavaScriptEnabled(true);
         webView.setInitialScale(240);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://thingspeak.com/channels/1686204/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15");
+        webView.loadUrl("https://thingspeak.com/channels/1686204/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Mesure+Temp%C3%A9rature&type=line");
 
 
         //Bouton pour aller vers la page d'accueil
@@ -60,7 +60,7 @@ public class Temperature extends Activity {
         buttonRefresh.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Log.i("refresh", "refresh");
-                Temperature.this.webView.loadUrl("https://thingspeak.com/channels/1686204/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15");
+                Temperature.this.webView.loadUrl("https://thingspeak.com/channels/1686204/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Mesure+Temp%C3%A9rature&type=line");
             }
         });
     }

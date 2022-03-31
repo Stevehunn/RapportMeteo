@@ -60,7 +60,7 @@ public class Humidite extends Activity {
         buttonRefresh.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Log.i("refresh", "refresh");
-                Humidite.this.webView.loadUrl("https://thingspeak.com/channels/1686204/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15");
+                Humidite.this.webView.loadUrl("https://thingspeak.com/channels/1686204/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Mesure+Humidit%C3%A9&type=line");
             }
         });
 
