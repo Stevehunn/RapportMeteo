@@ -68,6 +68,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(d);
                 onPause();
                 break;
+            case R.id.action_tvoc:
+                Intent e = new Intent(MainActivity.this, Tvoc.class);
+                startActivity(e);
+                onPause();
+                break;
             default:
                 return super.onOptionsItemSelected(item);
 

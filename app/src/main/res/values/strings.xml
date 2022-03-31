@@ -32,5 +32,7 @@
     <string name="buttonVersTvoc">Capteur Tvoc</string>
     <string name="buttonRefresh">Recharger</string>
 
+    <string name="explicationTvoc">*TVOC = Volatile Organic Compounds</string>
+
 
 </resources>
