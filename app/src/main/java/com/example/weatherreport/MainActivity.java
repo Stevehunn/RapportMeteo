@@ -52,22 +52,26 @@ public class MainActivity extends AppCompatActivity {
                 Intent a = new Intent(MainActivity.this, Temperature.class);
                 startActivity(a);
                 onPause();
+                break;
             case R.id.action_humidite:
                 Intent b = new Intent(MainActivity.this, Humidite.class);
                 startActivity(b);
                 onPause();
-
+                break;
             case R.id.action_luminosite:
                 Intent c = new Intent(MainActivity.this, Luminosite.class);
                 startActivity(c);
                 onPause();
-
+                break;
             case R.id.action_pollution:
                 Intent d = new Intent(MainActivity.this, Pollution.class);
                 startActivity(d);
                 onPause();
+                break;
             default:
                 return super.onOptionsItemSelected(item);
+
         }
+        return true;
     }
 }

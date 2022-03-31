@@ -15,7 +15,7 @@ public class Temperature extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.temperature);
 
         webView = (WebView) findViewById(R.id.afficheFieldTmp);
         WebSettings webSettings = webView.getSettings();

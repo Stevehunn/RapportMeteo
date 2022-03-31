@@ -15,7 +15,7 @@ public class Luminosite extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.luminosite);
        WebView webViewPol;
 
         webViewPol = (WebView) findViewById(R.id.afficheFieldLum);
