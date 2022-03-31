@@ -30,19 +30,22 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:textAlignment="center">
 
                 <Button
                     android:id="@+id/buttonHome"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/buttonHome" />
+                    android:text="@string/buttonHome"
+                    style="@style/btRetour" />
 
                 <Button
                     android:id="@+id/buttonVersPol"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/buttonVersPol" />
+                    android:text="@string/buttonVersPol"
+                    style="@style/btRetour"/>
 
 
             </LinearLayout>

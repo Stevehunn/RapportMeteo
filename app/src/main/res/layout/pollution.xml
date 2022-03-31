@@ -36,7 +36,8 @@
                     android:id="@+id/buttonHome"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/buttonHome" />
+                    android:text="@string/buttonHome"
+                    style="@style/btRetour"/>
 
 
             </LinearLayout>

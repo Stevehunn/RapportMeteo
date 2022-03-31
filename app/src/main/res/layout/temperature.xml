@@ -36,13 +36,15 @@
                     android:id="@+id/buttonHome"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/buttonHome" />
+                    android:text="@string/buttonHome"
+                    style="@style/btRetour"/>
 
                 <Button
                     android:id="@+id/buttonVersHum"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/buttonVersHum" />
+                    android:text="@string/buttonVersHum"
+                    style="@style/btRetour"/>
 
 
             </LinearLayout>
