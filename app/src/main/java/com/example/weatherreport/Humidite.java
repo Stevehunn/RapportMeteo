@@ -30,8 +30,7 @@ public class Humidite extends Activity {
         webView = (WebView) findViewById(R.id.afficheFieldHum);
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        webSettings.setUseWideViewPort(true);
-        webSettings.setLoadWithOverviewMode(true);
+        webView.setInitialScale(220);
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl("https://thingspeak.com/channels/1686204/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Mesure+Humidit%C3%A9&type=line");
 
