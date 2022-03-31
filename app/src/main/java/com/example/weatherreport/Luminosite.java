@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Luminosite extends Activity {
 
-    private WebView webViewPol;
+    private WebView webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,12 +23,13 @@ public class Luminosite extends Activity {
 
         Button buttonHome = (Button) findViewById(R.id.buttonHome);
         Button buttonVersPol = (Button) findViewById(R.id.buttonVersPol);
+        Button buttonRefresh = (Button) findViewById(R.id.buttonRefresh);
 
-        webViewPol = (WebView) findViewById(R.id.afficheFieldLum);
-        WebSettings webSettings = webViewPol.getSettings();
+        webView = (WebView) findViewById(R.id.afficheFieldLum);
+        WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        webViewPol.setWebViewClient(new WebViewClient());
-        webViewPol.loadUrl("https://thingspeak.com/channels/1686204/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15");
+        webView.setWebViewClient(new WebViewClient());
+        webView.loadUrl("https://thingspeak.com/channels/1686204/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15");
 
         //Bouton pour aller vers la page d'accueil
 
@@ -49,6 +50,15 @@ public class Luminosite extends Activity {
                 Intent i = new Intent(Luminosite.this, Pollution.class);
                 startActivity(i);
                 onPause();
+            }
+        });
+
+
+        //Bouton pour refresh
+        buttonRefresh.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Log.i("refresh", "refresh");
+                Luminosite.this.webView.loadUrl("https://thingspeak.com/channels/1686204/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15");
             }
         });
     }

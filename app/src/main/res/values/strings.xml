@@ -25,8 +25,10 @@
 
     <string name="buttonHome">Accueil</string>
     <string name="buttonVersTmp">Vers Capteur de température</string>
-    <string name="buttonVersHum">Vers Capteur d\'humidité</string>
-    <string name="buttonVersLum">Vers Capteur de luminosité</string>
-    <string name="buttonVersPol">Vers Capteur de pollution</string>
+    <string name="buttonVersHum">Capteur d\'humidité</string>
+    <string name="buttonVersLum">Capteur de luminosité</string>
+    <string name="buttonVersPol">Capteur de pollution</string>
+    <string name="buttonRefresh">Recharger</string>
+
 
 </resources>

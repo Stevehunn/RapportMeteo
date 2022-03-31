@@ -24,6 +24,7 @@ public class Temperature extends Activity {
 
         Button buttonHome = (Button) findViewById(R.id.buttonHome);
         Button buttonVersHum = (Button) findViewById(R.id.buttonVersHum);
+        Button buttonRefresh = (Button) findViewById(R.id.buttonRefresh);
 
         webView = (WebView) findViewById(R.id.afficheFieldTmp);
         WebSettings webSettings = webView.getSettings();
@@ -51,6 +52,14 @@ public class Temperature extends Activity {
                 Intent i = new Intent(Temperature.this, Humidite.class);
                 startActivity(i);
                 onPause();
+            }
+        });
+
+        //Bouton pour refresh
+        buttonRefresh.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Log.i("refresh", "refresh");
+                Temperature.this.webView.loadUrl("https://thingspeak.com/channels/1686204/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15");
             }
         });
     }

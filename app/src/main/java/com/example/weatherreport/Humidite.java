@@ -25,12 +25,15 @@ public class Humidite extends Activity {
 
         Button buttonHome = (Button) findViewById(R.id.buttonHome);
         Button buttonVersLum = (Button) findViewById(R.id.buttonVersLum);
+        Button buttonRefresh = (Button) findViewById(R.id.buttonRefresh);
 
         webView = (WebView) findViewById(R.id.afficheFieldHum);
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+        webSettings.setUseWideViewPort(true);
+        webSettings.setLoadWithOverviewMode(true);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://thingspeak.com/channels/1686204/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15");
+        webView.loadUrl("https://thingspeak.com/channels/1686204/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Mesure+Humidit%C3%A9&type=line");
 
         //Bouton pour aller vers la page d'accueil
 
@@ -51,6 +54,14 @@ public class Humidite extends Activity {
                 Intent i = new Intent(Humidite.this, Luminosite.class);
                 startActivity(i);
                 onPause();
+            }
+        });
+
+        //Bouton pour refresh
+        buttonRefresh.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Log.i("refresh", "refresh");
+                Humidite.this.webView.loadUrl("https://thingspeak.com/channels/1686204/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15");
             }
         });
 

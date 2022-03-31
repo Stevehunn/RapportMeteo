@@ -22,6 +22,7 @@ public class Pollution extends Activity {
         setContentView(R.layout.pollution);
 
         Button buttonHome = (Button) findViewById(R.id.buttonHome);
+        Button buttonRefresh = (Button) findViewById(R.id.buttonRefresh);
 
         webView = (WebView) findViewById(R.id.afficheFieldPol);
         webView.setWebViewClient(new WebViewClient());
@@ -37,6 +38,14 @@ public class Pollution extends Activity {
                 Intent i = new Intent(Pollution.this, MainActivity.class);
                 startActivity(i);
                 onPause();
+            }
+        });
+
+        //Bouton pour refresh
+        buttonRefresh.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Log.i("refresh", "refresh");
+                Pollution.this.webView.loadUrl("https://thingspeak.com/channels/1686204/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15");
             }
         });
 
