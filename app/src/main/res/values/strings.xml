@@ -22,4 +22,11 @@
 <string name="action_luminosite">Luminosité</string>
     <string name="action_pollution">Pollution</string>
 
+
+    <string name="buttonHome">Accueil</string>
+    <string name="buttonVersTmp">Vers Capteur de température</string>
+    <string name="buttonVersHum">Vers Capteur d\'humidité</string>
+    <string name="buttonVersLum">Vers Capteur de luminosité</string>
+    <string name="buttonVersPol">Vers Capteur de pollution</string>
+
 </resources>

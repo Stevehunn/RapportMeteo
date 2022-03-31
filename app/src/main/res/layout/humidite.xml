@@ -27,6 +27,25 @@
 
             </WebView>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buttonHome" />
+
+                <Button
+                    android:id="@+id/buttonVersLum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buttonVersLum" />
+
+
+            </LinearLayout>
 
 
         </LinearLayout>
