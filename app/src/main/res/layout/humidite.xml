@@ -37,14 +37,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/buttonHome"
-                    style="@style/btRetour"/>
+                    style="@style/btBasGauche"/>
 
                 <Button
                     android:id="@+id/buttonVersLum"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/buttonVersLum"
-                    style="@style/btRetour"/>
+                    style="@style/btBasDroit"/>
 
 
             </LinearLayout>

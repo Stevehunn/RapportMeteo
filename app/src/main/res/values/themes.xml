@@ -19,14 +19,6 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="btRetour">
-        <item name="android:layout_marginLeft">5dp</item>
-        <item name="android:layout_marginTop">5dp</item>
-        <item name="android:layout_width">90px</item>
-        <item name="android:layout_height">120px</item>
-        <item name="android:theme">@style/Theme.WeatherReport</item>
-
-    </style>
 
     <style name="Theme.WeatherReport.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
