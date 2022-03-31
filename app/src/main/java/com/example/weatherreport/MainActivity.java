@@ -79,4 +79,25 @@ public class MainActivity extends AppCompatActivity {
         }
         return true;
     }
+
+    /*------------------------Cycle de vie de l'activité-----------------------*/
+    protected void onResume() {
+        super.onResume();
+    }
+
+    protected void onPause() {
+        super.onPause();
+    }
+
+    protected void onStop() {
+        super.onStop();
+    }
+
+    protected void onRestart() {
+        super.onRestart();
+    }
+
+    protected void onDestroy() {
+        super.onDestroy();
+    }
 }
