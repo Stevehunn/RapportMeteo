@@ -1,5 +1,6 @@
 package com.example.weatherreport;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -7,19 +8,20 @@ import android.webkit.WebViewClient;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Luminosite extends AppCompatActivity {
-    private WebView webView;
+public class Luminosite extends Activity {
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+       WebView webViewPol;
 
-        webView = (WebView) findViewById(R.id.afficheField);
-        WebSettings webSettings = webView.getSettings();
+        webViewPol = (WebView) findViewById(R.id.afficheFieldLum);
+        WebSettings webSettings = webViewPol.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://thingspeak.com/channels/1686204/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15");
+        webViewPol.setWebViewClient(new WebViewClient());
+        webViewPol.loadUrl("https://thingspeak.com/channels/1686204/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15");
     }
 }

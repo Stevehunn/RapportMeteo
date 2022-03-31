@@ -4,9 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.view.menu.MenuBuilder;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /*
     @SuppressLint("RestrictedApi")
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -29,5 +32,42 @@ public class MainActivity extends AppCompatActivity {
             m.setOptionalIconsVisible(true);
         }
         return true;
+    }
+
+     */
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main, menu);
+        return true;
+    }
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.action_temperature:
+                Intent a = new Intent(MainActivity.this, Temperature.class);
+                startActivity(a);
+                onPause();
+            case R.id.action_humidite:
+                Intent b = new Intent(MainActivity.this, Humidite.class);
+                startActivity(b);
+                onPause();
+
+            case R.id.action_luminosite:
+                Intent c = new Intent(MainActivity.this, Luminosite.class);
+                startActivity(c);
+                onPause();
+
+            case R.id.action_pollution:
+                Intent d = new Intent(MainActivity.this, Pollution.class);
+                startActivity(d);
+                onPause();
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }

@@ -21,7 +21,7 @@
             android:paddingRight="20dp">
 
             <WebView
-                android:id="@+id/afficheField"
+                android:id="@+id/afficheFieldHum"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" >
 

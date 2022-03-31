@@ -1,13 +1,16 @@
 package com.example.weatherreport;
 
+import android.app.Activity;
 import android.os.Bundle;
+import android.webkit.WebResourceError;
+import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Humidite extends AppCompatActivity {
+public class Humidite extends Activity {
     private WebView webView;
 
 
@@ -16,7 +19,7 @@ public class Humidite extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        webView = (WebView) findViewById(R.id.afficheField);
+        webView = (WebView) findViewById(R.id.afficheFieldHum);
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient());
