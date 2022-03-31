@@ -21,5 +21,10 @@
         android:orderInCategory="100"
         android:title="@string/action_pollution"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/action_tvoc"
+        android:orderInCategory="100"
+        android:title="@string/action_tvoc"
+        app:showAsAction="never" />
 
 </menu>

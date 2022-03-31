@@ -20,7 +20,8 @@
 <string name="action_temperature">Temperature</string>
 <string name="action_humidite">Humidité</string>
 <string name="action_luminosite">Luminosité</string>
-    <string name="action_pollution">Pollution</string>
+    <string name="action_pollution">Pollution CO2</string>
+    <string name="action_tvoc">Pollution Tvoc</string>
 
 
     <string name="buttonHome">Accueil</string>
@@ -28,6 +29,7 @@
     <string name="buttonVersHum">Capteur d\'humidité</string>
     <string name="buttonVersLum">Capteur de luminosité</string>
     <string name="buttonVersPol">Capteur de pollution</string>
+    <string name="buttonVersTvoc">Capteur Tvoc</string>
     <string name="buttonRefresh">Recharger</string>
 
 

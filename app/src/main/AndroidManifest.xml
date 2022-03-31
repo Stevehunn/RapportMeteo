@@ -36,6 +36,9 @@
         <activity
             android:name=".Pollution"
             android:label="@string/app_name" />
+        <activity
+            android:name=".Tvoc"
+            android:label="@string/app_name" />
     </application>
 
 </manifest>
