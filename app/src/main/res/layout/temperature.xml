@@ -48,7 +48,7 @@
                     android:id="@+id/buttonVersHum"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/buttonVersLum"
+                    android:text="@string/buttonVersHum"
                     style="@style/btBasDroit"/>
 
 

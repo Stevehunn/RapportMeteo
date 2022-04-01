@@ -36,7 +36,7 @@ public class Luminosite extends Activity {
 
         buttonHome.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Log.i("Temperature", "Home");
+                Log.i("Lum", "Home");
                 Intent i = new Intent(Luminosite.this, MainActivity.class);
                 startActivity(i);
                 onPause();
@@ -46,7 +46,7 @@ public class Luminosite extends Activity {
         //Bouton pour aller vers le capteur de Pollution
         buttonVersPol.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Log.i("Temperature", "versHum");
+                Log.i("Lum", "versPol");
 
                 Intent i = new Intent(Luminosite.this, Pollution.class);
                 startActivity(i);
