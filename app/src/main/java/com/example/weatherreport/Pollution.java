@@ -28,7 +28,7 @@ public class Pollution extends Activity {
         webView = (WebView) findViewById(R.id.afficheFieldPol);
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        webView.setInitialScale(240);
+        webView.setInitialScale(220);
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl("https://thingspeak.com/channels/1686204/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Mesure+Pollution&type=line");
 
