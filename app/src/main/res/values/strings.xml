@@ -12,10 +12,11 @@
 <string name="menu_slideshow">Slideshow</string>
 <string name="powerby">Power By Raspberry pi 3</string>
 
-<string name="temperature">Temperature</string>
-<string name="humidity">Humidity</string>
-<string name="luminosity">Luminosity</string>
-<string name="select">Look to top corner left to view different data</string>
+<string name="temperature">Capteur de Température</string>
+<string name="humidity">Capteur d\'Humidité</string>
+<string name="luminosity">Capteur de Luminosité</string>
+    <string name="pollution">Capteur de Pollution CO2</string>
+    <string name="tvoc">Capteur de Pollution Tvoc</string>
 
 <string name="action_temperature">Temperature</string>
 <string name="action_humidite">Humidité</string>
