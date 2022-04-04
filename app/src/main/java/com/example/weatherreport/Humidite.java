@@ -2,6 +2,7 @@ package com.example.weatherreport;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -23,16 +24,27 @@ public class Humidite extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.humidite);
 
+        //Definition des boutons
         Button buttonHome = (Button) findViewById(R.id.buttonHome);
         Button buttonVersLum = (Button) findViewById(R.id.buttonVersLum);
         Button buttonRefresh = (Button) findViewById(R.id.buttonRefresh);
 
+        //Definition des paramètres de la webview
         webView = (WebView) findViewById(R.id.afficheFieldHum);
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        webView.setInitialScale(220);
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl("https://thingspeak.com/channels/1686204/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Mesure+Humidit%C3%A9&type=line");
+
+        //Orientation du téléphone
+        int orientation = getResources().getConfiguration().orientation;
+        if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            // In landscape
+            webView.setInitialScale(400);
+        } else {
+            // In portrait
+            webView.setInitialScale(220);
+        }
 
         //Bouton pour aller vers la page d'accueil
 
